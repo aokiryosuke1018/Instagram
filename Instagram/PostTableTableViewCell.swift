@@ -23,7 +23,7 @@ class PostTableTableViewCell: UITableViewCell {
     
     @IBOutlet weak var commentButton: UIButton!  // 課題で追加
     
-    @IBOutlet weak var commentContents: UITextView!  // 課題で追加
+    @IBOutlet weak var commentContents: UILabel! // 課題で追加
     
     
     // 自動で作成
@@ -75,10 +75,13 @@ class PostTableTableViewCell: UITableViewCell {
         }
         
         // コメントの表示
-        self.commentContents.text = "\(postData.comments)"
-        
+        // 配列として入っているコメントを１つずつ取り出してラベルに貼る
+        let array = postData.comments
+        // 以下は、スナップショットで無用に繰り返される場合に備えて、いったんラベルtextをリセットしてからコメント配列の全要素を+=で代入
+        self.commentContents.text? = ""
+        for comment in array {
+            self.commentContents.text? += "\(comment)\n"
+        }
     }
-    
-    
     
 }
