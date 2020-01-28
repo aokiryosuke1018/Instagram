@@ -308,7 +308,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y9c-n2-Xuo">
-                                <rect key="frame" x="82" y="125" width="250" height="290"/>
+                                <rect key="frame" x="82" y="105" width="250" height="290"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="290" id="hQO-da-uTA"/>
@@ -318,31 +318,31 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUH-qu-BvF">
-                                <rect key="frame" x="192" y="445" width="30" height="30"/>
-                                <state key="normal" title="OK"/>
-                                <connections>
-                                    <action selector="ok:" destination="NIz-aq-sUy" eventType="touchUpInside" id="j99-td-hMe"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ey-Q9-lhA">
-                                <rect key="frame" x="168.5" y="505" width="77" height="30"/>
+                                <rect key="frame" x="168.5" y="445" width="77" height="30"/>
                                 <state key="normal" title="キャンセル"/>
                                 <connections>
                                     <action selector="cancel:" destination="NIz-aq-sUy" eventType="touchUpInside" id="rfT-7I-YYU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUH-qu-BvF">
+                                <rect key="frame" x="192" y="405" width="30" height="30"/>
+                                <state key="normal" title="OK"/>
+                                <connections>
+                                    <action selector="ok:" destination="NIz-aq-sUy" eventType="touchUpInside" id="j99-td-hMe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="0ey-Q9-lhA" firstAttribute="centerX" secondItem="lIF-tT-qjW" secondAttribute="centerX" id="CdL-xw-oJf"/>
+                            <constraint firstItem="YUH-qu-BvF" firstAttribute="centerX" secondItem="lIF-tT-qjW" secondAttribute="centerX" id="0f8-YS-jC0"/>
+                            <constraint firstItem="0ey-Q9-lhA" firstAttribute="top" secondItem="YUH-qu-BvF" secondAttribute="bottom" constant="10" id="9JI-Pt-dlj"/>
+                            <constraint firstItem="Y9c-n2-Xuo" firstAttribute="top" secondItem="DIQ-ai-7gI" secondAttribute="bottom" constant="10" id="F9C-En-u2S"/>
                             <constraint firstItem="DIQ-ai-7gI" firstAttribute="centerX" secondItem="lIF-tT-qjW" secondAttribute="centerX" id="G7G-zK-PPW"/>
-                            <constraint firstItem="YUH-qu-BvF" firstAttribute="top" secondItem="Y9c-n2-Xuo" secondAttribute="bottom" constant="30" id="KNZ-BZ-PNf"/>
-                            <constraint firstItem="Y9c-n2-Xuo" firstAttribute="top" secondItem="DIQ-ai-7gI" secondAttribute="bottom" constant="30" id="bfU-gf-0iY"/>
-                            <constraint firstItem="0ey-Q9-lhA" firstAttribute="top" secondItem="YUH-qu-BvF" secondAttribute="bottom" constant="30" id="g6F-Sy-Wep"/>
+                            <constraint firstItem="0ey-Q9-lhA" firstAttribute="centerX" secondItem="lIF-tT-qjW" secondAttribute="centerX" id="M1j-YD-MPF"/>
+                            <constraint firstItem="YUH-qu-BvF" firstAttribute="top" secondItem="Y9c-n2-Xuo" secondAttribute="bottom" constant="10" id="fhA-lZ-fCF"/>
                             <constraint firstItem="DIQ-ai-7gI" firstAttribute="top" secondItem="7Eb-wB-Bh4" secondAttribute="top" constant="30" id="k9c-lE-Ikn"/>
                             <constraint firstItem="Y9c-n2-Xuo" firstAttribute="centerX" secondItem="lIF-tT-qjW" secondAttribute="centerX" id="lnm-PX-v1X"/>
-                            <constraint firstItem="YUH-qu-BvF" firstAttribute="centerX" secondItem="lIF-tT-qjW" secondAttribute="centerX" id="y2r-eq-9tL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Eb-wB-Bh4"/>
                     </view>
